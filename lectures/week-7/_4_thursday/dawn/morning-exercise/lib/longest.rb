@@ -1,11 +1,9 @@
 def longest_word(string)
-	arr = string.split(' ')
-	lengths = []
-
-	arr.each do |word|
-		lengths << word.length
-	end
-
-	aindex = lengths.index(lengths.max)
-	return arr[aindex]
+  # Split words into a sentence
+  words = string.split(" ")
+  # Map each word's length to a new array
+  words.max do |a, b|
+    a.length <=> b.length
+  end
 end
+
