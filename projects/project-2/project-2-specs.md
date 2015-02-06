@@ -10,15 +10,16 @@ The objective of this project is to:
 ## REQUIREMENTS
 * **Models.** Your app should have at least 3 models with appropriate associations and validations.
 * **Views.** Use **partials** heavily to DRY (Don’t Repeat Yourself) up your views, and loading data via Ajax when appropriate.
-* **RSPEC** Write routing, controller, and model specs. Use [simplecov](https://github.com/colszowka/simplecov) to ensure your test coverage is greater than 75%. TDD implies you write the tests first! Otherwise it is a huge struggle to get them done. Be sure to impliment shoulda_matchers & FactoryGirl in your testing.
+* **RSPEC** Write routing, controller, and model specs. Use [simplecov](https://github.com/colszowka/simplecov) to ensure your test coverage is greater than 75%. Additional feature specs can help you reach that coverage. TDD implies you write the tests first! Otherwise it is a huge struggle to get them done. Be sure to impliment shoulda_matchers & FactoryGirl in your testing.
 * **Validations & Error Messages.** Models in your application should validate data and handle incorrect inputs. The full error messages should be displayed to the user above the form.
 * **JavaScript & jQuery.** Spice up the front-end of your app with event driven functionality. Try out a new plugin or a library.
 * **AJAX.** Use AJAX to communicate with the server without reloading the page when appropriate.
 * **External APIs.** Use an external API to add functionality to your app.
 * **User Login.** Make sure you have authentication and authorization set up.
 * **Home page** - Don't forget to work on a proper homepage, clearly explaining what your app is and will do.
-* **Heroku.** Deploy your code to Heroku.
-* **User Experience** Ensure a pleasing and logical user experience. It is suggested to use a front-end CSS framework like Bootstrap to enhance and ease your CSS styling. 
+* **Heroku.** Deploy your code to Heroku. Use [Figaro](https://github.com/laserlemon/figaro) to protect your secret variables, such as API keys. We will give a mini lecture on both of these during the week.
+* **User Experience** Ensure a pleasing and logical user experience. It is suggested to use a front-end CSS framework like Bootstrap to enhance and ease your CSS styling.
+* **Protect your secret variables** Put your secret variables (such as API keys) into config/application.yml and ignore that file in git. You can then access them as environment variables in your app. Here's a [quick guide](https://quickleft.com/blog/simple-rails-app-configuration-settings/).
 
 
 ## OTHER IDEAS

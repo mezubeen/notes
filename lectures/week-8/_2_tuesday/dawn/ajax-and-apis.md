@@ -5,14 +5,12 @@ By the end of the lesson, you should be able to...
 
 * Design a RESTful JSON API
 * Retrieve Data from the API
-* Use JQuery to append data to HTML elements
-* Contrast how Handlebars can refactor your code
-* Send data to the API and, on success, maintain state between the DB and the DOM
+* Understand how a library like Angular works under the hood by manipulating the DOM with jQuery by hand
 
 ---
 
 ###AJAX
-What is AJAX, how does it work? Think about using a `src` tag in an image. The image makes a request to another URL for a file.
+What is [AJAX](http://api.jquery.com/jquery.ajax/), how does it work? Think about using a `src` tag in an image. The image makes a request to another URL for a file.
 
 AJAX is similar but instead of us asking for a picture we are asking for data—aka a .json file. In short, AJAX allows us to easily send and recieve json data to and from a server without reloading the page. Let's try it out using jQuery's native AJAX object!
  
@@ -22,14 +20,17 @@ AJAX is similar but instead of us asking for a picture we are asking for data—
 ---
 
 ###Considering a Backend vs a Frontend API request
-1) Ping the 3rd party API from the frontend
-2) Ping the app's controller from the frontend, which in turn pings the 3rd party API
+* Ping the 3rd party API from the frontend
 
-Differences:
+or
 
-* Obfuscation of API keys 
-* CSRF issues
-* Preference of 3rd party
+* Ping the app's controller from the frontend, which in turn pings the 3rd party API
+
+What are the differences to consider?
+
+* Obfuscation of API keys is more difficult from the front end
+* Issues regarding cross domain requests which may be [CSRF](http://guides.rubyonrails.org/security.html#cross-site-request-forgery-csrf).
+* Does your 3rd party API have a helpful libary for either the front-end, back-end, or both?
 
 ---
 
@@ -47,7 +48,7 @@ Discussion Questions
 ##Exercise
 Use AJAX to create single-page behavior in a Rails app.
 
-* Navigate into the app with a relative path `/library-spa`.
+* Clone the library app [here](git@github.com:sf-wdi-14/library_spa.git).
 * **GOAL:** Setup the app and compare/contrast the books controller others you've built in the past.
 
 ###Setup
@@ -97,10 +98,7 @@ Aim to have this function execute once the document is ready.
 
 * Use the gem `rails-api` if you're ever looking to simply impliment a barebones rails API
 
-##Lab
+##Toights Lab
 
-* Finish this exercise.
-* Familiarize yourself with the AJAX functionality of JQuery.
-* Add an AJAX request to our rails-review [app](https://github.com/sf-wdi-14/rails-review)
-
+* [Here](https://github.com/sf-wdi-14/notes/blob/master/assignments/week-8/ajax-hw.md)
 
