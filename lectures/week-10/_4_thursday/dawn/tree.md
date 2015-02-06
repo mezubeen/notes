@@ -4,7 +4,7 @@ Trees are one of the most commonly used data structures in web development. This
 
 Now, here's the climax: The article that you are reading at this moment is rendered in your browser as a tree! The paragraph that you are reading is represented as text in a `<p>` element; the `<p>` element is nested inside of a `<body>` element; and the `<body>` element is nested inside of an `<html>` element. 
 
-The nestng of data is simiar to a family tree. The `<html>` element is a parent, the `<body>` element is a child, and the `<p>` element is a child of the `<body>` element. If this analogy of a tree seems useful to you, then you will find comfort in knowing that more analogies will be used during our implementation of a tree. 
+The nesting of data is similar to a family tree. The `<html>` element is a parent, the `<body>` element is a child, and the `<p>` element is a child of the `<body>` element. If this analogy of a tree seems useful to you, then you will find comfort in knowing that more analogies will be used during our implementation of a tree. 
 
 In this lecture, we will create a tree using one of two methods of tree traversal: Depth-First Search (DFS). (If the word traversal is unfamiliar to you, consider it to mean visiting every part of the tree.) This type of traversal incorporates the use of a data structure that we've covered on Monday: A stack! That's cool!
 

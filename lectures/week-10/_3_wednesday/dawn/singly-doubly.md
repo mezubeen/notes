@@ -144,7 +144,7 @@ List.prototype.indexAt = function(index) {
       count       = 0,
       message     = {failure: "Failure: non-existent node in this list."};
 
-  if (this._length = 0 || index < 0 || index >= this._length) {
+  if (this._length === 0 || index < 0 || index >= this._length) {
     throw new Error(message.failure);  
   }
 
